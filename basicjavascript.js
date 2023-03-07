@@ -50,3 +50,66 @@ var myLastName="Mina";
 
 
 //VII
+// undersanding the uninitialized variables
+var z=5;
+var x=10;
+var v="I am a";
+// Only change code above this line
+
+z = z + 1;
+x = x + 5;
+v = v + " String!";
+
+//VIII
+//understanding case sensitivity in variables
+//camelcasing while defining the variable name 
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+studlyCapVar = 10;
+properCamelCase="A String";
+titleCaseOver=9000;
+
+//IX
+// Explore difference between var and let keyword
+var camper = "James";
+var camper = "David";
+console.log(camper);
+
+//changing var with let keyword
+let camper = "James";
+let camper = "David";
+
+//X
+// declare a read-only variable with the const keyword
+const FCC= "freeCodeCamp";
+
+let fact="is cool!";
+
+fact="is awesome";
+
+console.log(FCC,fact);
+
+
+//XI
+//add two numbers with javascript
+
+const sum =10+10;
+
+//XII
+//subtract one number form the another in javascript
+
+const difference=45-33;
+
+//XIII
+// multiplying the two number in javascript
+const product = 8*10;
+
+//XIV
+//dividing one number with another 
+const quotient =66/33;
+
+//XV
+///increment a number with javascript
+
