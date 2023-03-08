@@ -44,3 +44,80 @@ g /= 11;
 //V
 //escaping literal quotes in string
 const myStr = "I am a \"double quoted\" string inside \"double quotes\".";
+
+
+//VI
+//quoting string with single quotes
+
+var myStr1 = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+
+//VII
+// escape sequence in string
+const myStr2 = "FirstLine\n\t\\SecondLine\nThirdLine";
+
+//VIII
+//concatenating Strings with plus operator
+const myStr3 = "This is the start."+ " This is the end."; 
+
+//IX
+//concatenating Strings with the plus equals operator
+
+let myStr4="This is the first sentence.";
+myStr+=" This is the second sentence."
+
+//X 
+//constructing strings with variables
+const myName = "Uma Mina";
+const myStr5 = "My name is "+ myName+" and I am well!";
+
+//XI 
+// appending variables to stings
+
+const someAdjective = "fun";
+let mySt6r = "Learning to code is ";
+myStr6 += someAdjective;
+
+
+//XII
+//find the length of the String
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+lastNameLength = lastName.length;
+
+//XIII
+// use brackets notation to find the first character of the string
+let firstLetterOfLastName = "";
+const lastName1 = "Lovelace";
+
+firstLetterOfLastName = lastName1[0];
+
+
+//XIV
+//understand string immutability
+ let str="Jello World";
+ str="Hello World";
+
+ //XV
+ //use brackets notation to find the Nth Character in a string 
+
+ const lastName2 = "Lovelace";
+
+const thirdLetterOfLastName = lastName2[2];
+
+//XVI
+//use brackets notation to find the last character in a string 
+const lastName3 = "Lovelace";
+
+const lastLetterOfLastName = lastName3[lastName3.length-1];
+
+//XVII
+// use bracket notations to find the Nth-to-Last Character in a string 
+//Use bracket notation to find the second-to-last character in the lastName string.
+const lastName4 = "Lovelace";
+
+const secondToLastLetterOfLastName = lastName4[lastName4.length-2];
+//XVIII
+//Wordblanks
+//
