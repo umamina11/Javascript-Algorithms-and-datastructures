@@ -112,4 +112,32 @@ const quotient =66/33;
 
 //XV
 ///increment a number with javascript
+let myVar =87;
+myVar++
+
+//XVI
+//decerement a number with javascript
+ let myNum= 45;
+ myNum--;
+
+ //XVII
+ // create decimal numbers with javascript
+ const decimal= 5.7;
+
+
+ //XVIII
+ // multiply two decimals in javascript
+ const productDec= 2.0 * 2.5;
+ 
+ //XIX
+ // divide one decimal with another 
+
+ const quotient1= 4.4/2.0;
+
+ //XX
+ //finding a reminder
+
+ const reminder1=11%3;
+
+ 
 
