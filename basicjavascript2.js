@@ -120,4 +120,22 @@ const lastName4 = "Lovelace";
 const secondToLastLetterOfLastName = lastName4[lastName4.length-2];
 //XVIII
 //Wordblanks
-//
+
+var myNoun="dog";
+var myAdjective="big";
+var myVerb="ran";
+var myAdverb="quickly";
+
+var wordblank="The "+ myAdjective +" "+ myNoun + " " + myVerb + " so "+ myAdverb + " into the field.";
+console.log(wordblank);
+
+//XIX
+//Store multiple values in one varible using javascript array
+//the new array myArray so that it contains both a string and a number
+
+const myArray=["I","am","uma","mina",1,2,3,4];
+
+//XX
+//nest one array within another array
+
+const myArr=["uma","neha","vidhan","Raghu",[21,25,18,23]]
