@@ -80,3 +80,44 @@ const myList = [
   ["toothpaste",2,1,1],
   ["cooking oil",2]
     ];
+
+//X
+//Reusable javascript function
+/**
+ * Create a function called reusableFunction which prints the string Hi World to the dev console.
+Call the function.
+ */
+function reusableFunction(){
+    console.log("Hi World");
+  }
+  reusableFunction();
+
+  //XI
+  // passing values to function with arguments
+  /**
+   * Create a function called functionWithArgs that accepts two arguments and outputs their sum to the dev console.
+Call the function with two numbers as arguments.
+*/
+function functionWithArgs(num1, num2){
+    console.log(num1+num2);
+  
+  }
+  
+  functionWithArgs(1,2);
+  functionWithArgs(7,9);
+
+  //XII
+  // return a value from a function with return 
+  // Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value.
+  function timesFive(num){
+    return num*5;
+  
+  }
+  timesFive(5);
+  timesFive(2);
+  timesFive(0)
+
+
+  //XIII
+  //global scope and functions
+  
