@@ -130,8 +130,7 @@ Inside function fun1, assign 5 to oopsGlobal without using the var, let or const
 let myGlobal =10;
 let oopsGlobal=5;
 function fun1() {
-  // Assign 5 to oopsGlobal here
-  
+ 
 var output = "";
   if (typeof myGLobal != "undefined") {
 output += "myGlobal: " + myGlobal;
@@ -143,7 +142,6 @@ output += " oopsGlobal: " + oopsGlobal;
 
 }
 
-// Only change code above this line
 
 function fun2() {
   let output = "";
@@ -156,6 +154,7 @@ function fun2() {
   console.log(output);
 }
 
+//XIV
 //local scope and the functions 
 /**The editor has two console.logs to help you see what is happening. Check the console as you code to see how it changes. Declare a local variable myVar inside myLocalScope and run the tests.
 
@@ -175,3 +174,22 @@ function myLocalScope() {
 myLocalScope();
 
 console.log('outside myLocalScope', myVar);
+
+
+//XV
+// global Vs local scope in the functions
+/**Add a local variable to myOutfit function to override the value of outerWear with the string sweater. */
+
+// Setup
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+
+const outerWear="sweater";
+  
+  return outerWear;
+}
+
+myOutfit();
+
+//XVI
