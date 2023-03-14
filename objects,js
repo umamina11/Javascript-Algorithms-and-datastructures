@@ -12,3 +12,36 @@ const myDog = {
   tails: 1,
   friends: ["kuttu","dogu"]
   };
+
+  //II
+  //Accessing object properties with dot notation 
+  /**Read in the property values of testObj using dot notation. Set the variable hatValue equal to the object's property hat and set the variable shirtValue equal to the object's property shirt. */
+
+const testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+  };
+  
+  const hatValue = testObj.hat;      
+  const shirtValue = testObj.shirt;   
+  
+  //III 
+  //Accessing the object properties with the bracket notations
+  /**Read the values of the properties an entree and the drink of testObj using bracket notation and assign them to entreeValue and drinkValue respectively.
+ */
+
+const testObj1 = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+  };
+
+  const entreeValue = testObj1["an entree"];   
+  const drinkValue = testObj1["the drink"];    
+
+
+// IV
+// accessing object properties with variables
+
+/**Set the playerNumber variable to 16. Then, use the variable to look up the player's name and assign it to player. */
