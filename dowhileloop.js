@@ -84,4 +84,4 @@ const contacts = [
   
   }
   
-  lookUpProfile("Akira", "likes");
+  lookUpProfile("Akira", "likes"); 
