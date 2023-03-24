@@ -19,3 +19,34 @@ const result = {
   }
   
   const failuresList = makeList(result.failure);
+
+
+  //II
+  //Write Concise Object Literal Declarations Using Object Property Shorthand
+  /**Use object property shorthand with object literals to create and return an object with name, age and gender properties. */
+
+  const createPerson = (name, age, gender) => {
+    
+      return {
+      name,
+      age,
+      gender
+    };
+   
+  };
+
+  //III
+  //write concise declaration function with ES6
+  //Refactor the function setGear inside the object bicycle to use the shorthand syntax described above.
+
+  const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+      this.gear = newGear;
+    }
+  };
+ 
+  bicycle.setGear(3);
+  console.log(bicycle.gear);
+
+  
