@@ -47,3 +47,15 @@ Note
 You can have multiple flags on your regex like /search/gi*/
 
 
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi;
+let result5 = twinkleStar.match(starRegex);
+
+
+//VII
+//match anything with wildcard period
+//Complete the regex unRegex so that it matches the strings run, sun, fun, pun, nun, and bun. Your regex should use the wildcard character.
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result6 = unRegex.test(exampleStr);
