@@ -59,3 +59,33 @@ let result5 = twinkleStar.match(starRegex);
 let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /.un/; // Change this line
 let result6 = unRegex.test(exampleStr);
+
+
+//VIII
+//match single character with multiple possibilities 
+/**Use a character class with vowels (a, e, i, o, u) in your regex vowelRegex to find all the vowels in the string quoteSample.
+
+Note: Be sure to match both upper- and lowercase vowels. */
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; 
+let result7 = quoteSample.match(vowelRegex);
+
+
+//IX
+//match letters of the alphabet
+//Match all the letters in the string quoteSample.
+
+//Note: Be sure to match both uppercase and lowercase letters.
+
+let quoteSample1 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; 
+let result8 = quoteSample.match(alphabetRegex);
+
+//X
+//match numbers and letters of the alphabet
+/**Create a single regex that matches a range of letters between h and s, and a range of numbers between 2 and 6. Remember to include the appropriate flags in the regex. */
+let quoteSample2 = "Blueberry 3.141592653s are delicious.";
+let myRegex1 = /[h-s2-6]/gi; 
+let result9 = quoteSample.match(myRegex); 
+
