@@ -30,4 +30,3 @@ let movieName1 = "2001: A Space Odyssey";
 let noNumRegex = /\D/g; 
 let result3 = movieName.match(noNumRegex).length;
 
-
