@@ -67,7 +67,7 @@ let foods = {
   //Generate an Array of All Object Keys with Object.keys()
   //Finish writing the getArrayOfUsers function so that it returns an array containing all the properties in the object it receives as an argument.
 
-  let users = {
+  let users1 = {
     Alan: {
       age: 27,
       online: false
