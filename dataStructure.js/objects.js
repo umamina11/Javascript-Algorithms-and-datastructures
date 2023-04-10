@@ -92,7 +92,7 @@ let foods = {
     
   }
   
-  console.log(getArrayOfUsers(users));
+  console.log(getArrayOfUsers(users1));
 
   //V
   //Modify an Array Stored in an Object
