@@ -38,5 +38,68 @@ Factorials are often represented with the shorthand notation n!
 For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 
 Only integers greater than or equal to zero will be supplied to the function.
-
 */
+
+function factorialize(num) {
+  let product = 1;
+  for (let i = 2; i <= num; i++) {
+    product *= i;
+  }
+  return product;
+}
+
+factorialize(5);
+
+//IV
+//Find the Longest Word in a String
+//Return the length of the longest word in the provided sentence.
+
+//Your response should be a number.
+
+function findLongestWordLength(str) {
+  let longestLength = 0;
+  let currentLength = 0;
+  
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      if (currentLength > longestLength) {
+        longestLength = currentLength;
+      }
+      currentLength = 0;
+    } else {
+      currentLength++;
+    }
+  }
+  if (currentLength > longestLength) {
+    longestLength = currentLength;
+  }
+  
+  return longestLength;
+  }
+
+
+
+//V
+//Return Largest Numbers in Arrays
+/**
+ * Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
+
+Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
+ */
+function largestOfFour(arr) {
+  const results = [];
+  for (let i = 0; i < arr.length; i++) {
+    let largestNumber = arr[i][0];
+    for (let j = 1; j < arr[i].length; j++) {
+      if (arr[i][j] > largestNumber) {
+        largestNumber = arr[i][j];
+      }
+    }
+    results[i] = largestNumber;
+  }
+
+  return results;
+}
+
+
+
