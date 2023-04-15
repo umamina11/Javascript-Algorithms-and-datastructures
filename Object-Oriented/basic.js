@@ -46,3 +46,4 @@ let dog3 = {
   };
   
   dog.sayLegs();
+
