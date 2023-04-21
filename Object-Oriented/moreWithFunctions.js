@@ -78,4 +78,31 @@ function Dog(name) {
   };
 
 //V
-//
+//Understand Where an Object’s Prototype Comes From
+//Use isPrototypeOf to check the prototype of beagle.
+
+
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle1 = new Dog("Snoopy");
+
+
+Dog.prototype.isPrototypeOf(beagle1);
+
+
+//VI
+//Understand the Prototype Chain
+//Modify the code to show the correct prototype chain.
+
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle2 = new Dog("Snoopy");
+
+Dog.prototype.isPrototypeOf(beagle2); 
+
+
+Object.prototype.isPrototypeOf(Dog.prototype);
