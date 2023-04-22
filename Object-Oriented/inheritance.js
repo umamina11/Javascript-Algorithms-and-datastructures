@@ -68,4 +68,69 @@ function Dog() {}
 Dog.prototype = Object.create(Animal.prototype);
 
 let beagle1 = new Dog();
-beagle1.eat(); // Should print "nom nom nom"
+beagle1.eat(); 
+
+//IV
+//Reset an Inherited Constructor Property
+//Fix the code so duck.constructor and beagle.constructor return their respective constructors.
+function Animal() {}
+function Bird() {}
+function Dog() {}
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+
+let duck1 = new Bird();
+let beagle2 = new Dog();
+
+//V
+//add methods to after the inheritance
+/**Add all necessary code so the Dog object inherits from Animal and the Dog's prototype constructor is set to Dog. Then add a bark() method to the Dog object so that beagle can both eat() and bark(). The bark() method should print Woof! to the console.
+ * 
+ */
+
+function Animal() {}
+Animal.prototype.eat = function() {
+  console.log("nom nom nom");
+};
+
+function Dog() {}
+
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function() {
+  console.log("Woof!");
+};
+
+
+let beagle3 = new Dog();
+
+beagle3.eat(); 
+beagle3.bark(); 
+
+
+//VI
+//Override Inherited Methods
+
+//Override the fly() method for Penguin so that it returns the string Alas, this is a flightless bird.
+
+function Bird() { }
+
+Bird.prototype.fly = function() { return "I am flying!"; };
+
+function Penguin() { }
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+
+
+Penguin.prototype.fly = function() {
+  return "Alas, this is a flightless bird.";
+};
+
+
+let penguin = new Penguin();
+console.log(penguin.fly());
