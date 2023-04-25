@@ -54,3 +54,43 @@ function Bird() {
       return weight;
     };
   }
+
+
+  //IV
+  //Use Closure to Protect Properties Within an Object from Being Modified Externally
+  //Change how weight is declared in the Bird function so it is a private variable. Then, create a method getWeight that returns the value of weight 15.
+
+
+  function Bird() {
+  let weight = 15;
+  this.getWeight = () => weight;  
+}
+
+//V
+//Understand the Immediately Invoked Function Expression (IIFE)
+//Rewrite the function makeNest and remove its call so instead it's an anonymous immediately invoked function expression (IIFE).
+
+(function() {
+  console.log("A cozy nest is ready");
+})();
+
+
+
+//VI
+//Use an IIFE to Create a Module
+//Create a module named funModule to wrap the two mixins isCuteMixin and singMixin. funModule should return an object.
+
+let funModule = (function() {
+  return {
+    isCuteMixin: function(obj) {
+      obj.isCute = function() {
+        return true;
+      };
+    },
+    singMixin: function(obj) {
+      obj.sing = function() {
+        console.log("Singing to an awesome tune");
+      };
+    }
+  };
+})();
