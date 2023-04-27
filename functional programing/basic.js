@@ -61,12 +61,14 @@ const getTea1 = (prepareTea, numOfCups) => {
   return teaCups;
 };
 
-// Only change code below this line
+
 const tea4GreenTeamFCC = getTea1(prepareGreenTea, 27); // :)
 const tea4BlackTeamFCC = getTea1(prepareBlackTea, 13);
-// Only change code above this line
+
 
 console.log(
   tea4GreenTeamFCC,
   tea4BlackTeamFCC
 );
+
+
